@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KKU Smart app</string>
+
+    <string name="SignUp">สมัครสมาชิก</string>
+    <string name="SignIn">เข้าสู่ระบบ</string>
+
 </resources>
