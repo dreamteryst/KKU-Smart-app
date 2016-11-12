@@ -42,7 +42,8 @@ public class SignUpActivity extends AppCompatActivity {
                 //Check Space
                 if (nameString.isEmpty() || phoneString.isEmpty() || userString.isEmpty() ||passwordString.isEmpty()) {
                     //Have space
-                    Log.d("Onclick", "Have Space");
+                    MyAlert myAlert = new MyAlert(SignUpActivity.this, R.drawable.bird48, "Have a space", "กรุณากรอกข้อความให้ครบทุกช่อง");
+                    myAlert.myDialog();
                 }// IF IsEmpty
 
             }// Onclick
