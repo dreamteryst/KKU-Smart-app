@@ -3,5 +3,7 @@
 
     <string name="SignUp">สมัครสมาชิก</string>
     <string name="SignIn">เข้าสู่ระบบ</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
 
 </resources>

@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.squareup.okhttp.*;
 
@@ -33,8 +34,8 @@ public class SignUpActivity extends AppCompatActivity {
     private String nameString, phoneString, userString, passwordString, imagePathString, imageNameString;
     private Uri uri;
     private Boolean aBoolean;
-    private String urlAddUser = "http://www.swiftcodingthai.com/kku/add_user_dreamer.php";
-    private String urlImage = "http://www.swiftcodingthai.com/kku/Image";
+    private String urlAddUser = "http://swiftcodingthai.com/kku/add_user_master.php";
+    private String urlImage = "http://swiftcodingthai.com/kku/Image";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,11 +117,11 @@ public class SignUpActivity extends AppCompatActivity {
                 OkHttpClient okHttpClient = new OkHttpClient();
                 RequestBody requestBody = new FormEncodingBuilder()
                         .add("isAdd","true")
-                        .add("name", nameString)
-                        .add("phone", phoneString)
-                        .add("user", userString)
-                        .add("password", passwordString)
-                        .add("image", urlImage + imageNameString)
+                        .add("Name", nameString)
+                        .add("Phone", phoneString)
+                        .add("User", userString)
+                        .add("Password", passwordString)
+                        .add("Image", urlImage + imageNameString)
                         .build();
                 Request.Builder builder = new Request.Builder();
                 Request request = builder.url(params[0]).post(requestBody).build();
@@ -137,6 +138,11 @@ public class SignUpActivity extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             Log.d(TAG, "onPostExecute: " + s);
+            if (Boolean.parseBoolean(s)) {
+                Toast.makeText(context, "Upload Success", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(context, "Cannot Upload Success", Toast.LENGTH_SHORT).show();
+            }
         }// on post
     }// AddNewUser Class
 
