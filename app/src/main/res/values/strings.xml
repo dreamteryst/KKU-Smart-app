@@ -5,5 +5,11 @@
     <string name="SignIn">เข้าสู่ระบบ</string>
     <string name="user">User</string>
     <string name="password">Password</string>
+    <string name="haveSpace">มีช่องว่าง</string>
+    <string name="haveSpaceMsg">กรุณากรอกข้อมูลให้ครบทุกช่อง</string>
+    <string name="userFalse">User ผิด</string>
+    <string name="userFalseMsg">ไม่มี User นี้ในฐานข้อมูลของเรา</string>
+    <string name="passFalse">Password ผิด</string>
+    <string name="passFalseMsg">ลองพิมพ์ใหม่ Password ิด</string>
 
 </resources>
