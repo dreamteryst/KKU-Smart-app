@@ -10,6 +10,6 @@
     <string name="userFalse">User ผิด</string>
     <string name="userFalseMsg">ไม่มี User นี้ในฐานข้อมูลของเรา</string>
     <string name="passFalse">Password ผิด</string>
-    <string name="passFalseMsg">ลองพิมพ์ใหม่ Password ิด</string>
+    <string name="passFalseMsg">ลองพิมพ์ใหม่ Password ผิด</string>
 
 </resources>
